@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Needarts</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
+  </head>
+  <body>
+    <header>
+      <div class="img-container">
+          <a href="#"><img id="logo" src="./assets/img/logo.png" alt="" /></a>
+          <h1>Needarts</h1>
+      </div>
+      <div class="search-container">
+        <fieldset>
+          <input
+            type="text"
+            name="search"
+            id="search-collection"
+            placeholder="Search"
+          />
+          <input type="submit" hidden />
+        </fieldset>
+      </div>
+    </header>
+    <main>
+      <fieldset class="select-fieldset">
+        <select name="filter" id="filter-century">
+          <option disabled selected value="any">Century</option>
+          <option value="any">all centuries</option>
+        </select>
+        <select name="filter" id="filter-technique">
+          <option disabled selected value="any">Technique / Medium</option>
+          <option value="any">all techniques</option>
+        </select>
+        <select name="filter" id="filter-classification">
+          <option disabled selected value="any">Classification</option>
+          <option value="any">all classifications</option>
+        </select>
+      </fieldset>
+      <div id="collection-wrapper"></div>
+      <div id="show-more-button"><button>See more</button></div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
